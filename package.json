@@ -1,0 +1,29 @@
+{
+  "name": "proxy-worker-controller",
+  "version": "0.9.0",
+  "description": "Simple class to extend your project with workers instances",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example-01": "DEBUG=proxy-worker-controller:* node ./examples/01-example-call/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/insane-jo/proxy-worker-controller.git"
+  },
+  "keywords": [
+    "workers",
+    "multithread",
+    "proxy"
+  ],
+  "author": "insane_jo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/insane-jo/proxy-worker-controller/issues"
+  },
+  "homepage": "https://github.com/insane-jo/proxy-worker-controller#readme",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "uuid": "^3.4.0"
+  }
+}
