@@ -2,10 +2,13 @@ const ProxyWorkerController = require('../../index');
 
 class ExampleProxyClass extends ProxyWorkerController {
     constructor(a, b) {
+        // Insert this code to your class to use multithreading with workers
+        // THIS CODE IS MANDATORY {
         const pwcResult = super(a, b);
         if (pwcResult && !(pwcResult instanceof ExampleProxyClass)) {
             return pwcResult;
         }
+        // }
 
         this.__a = a;
         this.__b = b;
